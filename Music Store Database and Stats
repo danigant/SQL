@@ -1,0 +1,27 @@
+~Create a Music Store Database
+
+
+
+CREATE TABLE music_store (id INTEGER PRIMARY KEY, name TEXT, genre TEXT, year INTEGER, quantity INTEGER, price Numeric);
+
+INSERT INTO music_store VALUES (1, "Nirvana", "Grunge", 1992, 5, 12.99);
+INSERT INTO music_store VALUES (2, "Dolly Parton", "Country", 1973, 4, 13.89);
+INSERT INTO music_store VALUES (3, "Harry Styles", "Pop", 2022, 8, 12.99);
+INSERT INTO music_store VALUES (4, "STP", "Grunge", 1994, 3, 15.99);
+INSERT INTO music_store VALUES (5, "Garth Brooks", "Country", 1994, 5, 15.99);
+INSERT INTO music_store VALUES (6, "Radiohead", "Alternative", 2015, 7, 14.99);
+INSERT INTO music_store VALUES (7, "NIN", "Metal", 1987, 5, 10.99);
+INSERT INTO music_store VALUES (8, "Ozzy Osbourne", "Metal", 1973, 4, 9.99);
+INSERT INTO music_store VALUES (9, "Beethoven", "Classical", 1786, 3, 15.99);
+INSERT INTO music_store VALUES (10, "Beyonce", "Pop", 2019, 9, 18.69);
+INSERT INTO music_store VALUES (11, "Mozart", "Classical", 1678, 2, 15.99);
+INSERT INTO music_store VALUES (12, "Rage Against The Machine", "Alternative", 1997, 4, 10.99);
+INSERT INTO music_store VALUES (13, "Merle Haggard", "Country", 1986, 5, 8.99);
+INSERT INTO music_store VALUES (14, "Nikki Minaj", "Rap", 2011, 8, 17.99);
+INSERT INTO music_store VALUES (15, "Foo Fighters", "Grunge", 2003, 4, 17.59);
+
+--display the database ordered by price.
+SELECT * FROM music_store ORDER BY price;
+
+--What is the SUM total inventory
+SELECT SUM(quantity) FROM music_store;
